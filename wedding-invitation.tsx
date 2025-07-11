@@ -16,7 +16,7 @@ export default function WeddingInvitation() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F9F4EF] flex flex-col items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-[#FFF9F3] flex flex-col items-center justify-center px-4 py-8">
       <div className="max-w-2xl w-full text-center space-y-12">
         {/* Decorative Ornate Crest */}
         <div className="flex justify-center mb-8">
@@ -38,13 +38,32 @@ export default function WeddingInvitation() {
           </h1>
         </div>
 
-        {/* Couple Names */}
+        {/* 
         <div className="space-y-8 py-8">
           <div className="text-5xl md:text-7xl font-serif text-[#7D1C1C] leading-none">
             <div className="mb-2">Саттар</div>
             <div className="text-3xl md:text-4xl opacity-80">&</div>
             <div className="mt-2">Жамиля</div>
           </div>
+        </div> */}
+
+        {/* Images */}
+        <div className="space-y-2 py-2">
+          <Image
+            src="/images/Sattar.PNG"
+            alt="Sattar"
+            width={160}
+            height={120}
+            className="w-full h-full object-cover rounded-lg"
+          />
+          <div className="text-3xl md:text-4xl font-serif text-[#7D1C1C] leading-none text-2xl md:text-3xl opacity-80 italic">&</div>
+          <Image
+            src="/images/Zhamilya.PNG"
+            alt="Zhamilya"
+            width={160}
+            height={120}
+            className="w-full h-full object-cover rounded-lg"
+          />
         </div>
 
         {/* Wedding Date */}
